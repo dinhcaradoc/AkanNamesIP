@@ -1,0 +1,13 @@
+.jumbotron{
+  text-align: center;
+}
+.jumbotron h1{
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 2%;
+  padding: 5px 20px;
+  color: red;
+  background-color: black;
+  box-sizing: border-box;
+  justify-content: space-around;  
+}

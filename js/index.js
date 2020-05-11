@@ -1,7 +1,8 @@
 var maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
 var femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday']
 
-function dayOfWeek(){
+function getDayofWeek(){
   var dob = document.getElementById('dateOfBirth');
   return dob;
 
@@ -19,6 +20,8 @@ function dayOfWeek(){
 function findAkanName(){
   var male = document.getElementById('maleRadio');
   var female = document.getElementById('femaleRadio');
+  var dayOfWeek = days[d];
+  var akanName = document.getElementById('akanName');
 
   if (male){
     name = maleNames[d];
@@ -27,6 +30,10 @@ function findAkanName(){
     name = femaleNames[d];
   }
   return name;
+  
+  akanName.innerhtml = "You were born on " + dayOfWeek + " and your Akan Name is" + name;
 }
+
+ 
 
 
