@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div>
+    <div class = "col-lg-12">
       <div class="card-body">
         <h3 class="card-title">Akan Names List</h3>
         <p class="card-text">A list of Akan names has been provided below. You can simply pick your Akan name based on the day of the week on which you were born. In case you are not certain about the day, you can use our Akan Names generator instead.</p>
@@ -72,23 +72,23 @@
             </tr>
           </tbody>
         </table>
-        <div class="card col-md-8">
+        <div class="card col-md-5">
           <div class="card-body">
             <h4 class="card-title">Generate your Akan name here: </h4>
             <form class="needs-validation">
               <p>Select your gender</p>
               <fieldset class="form-group">
                 <div class="row">
-                  <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-                  <div class="col-sm-10">
+                  <legend class="col-form-label col-sm-4 pt-0">Gender</legend>
+                  <div class="col-sm-8">
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="genderRadios" id="maleRadio" value="male" checked>
+                      <input class="form-check-input" type="radio" name="gender" id="maleRadio" value="male">
                       <label class="form-check-label" for="maleRadio">
                         Male
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="genderRadios" id="femaleRadio" value="female">
+                      <input class="form-check-input" type="radio" name="gender" id="femaleRadio" value="female">
                       <label class="form-check-label" for="femaleRadio">
                         Female
                       </label>
@@ -109,44 +109,7 @@
       </div>
     </div>
     <script type="text/javascript">
-      var maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
-      var femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
-      var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday']
-
-      function getDayofWeek(){
-        var dob = document.getElementById('dateOfBirth');
-        return dob;
-
-        var day = dob.getDate();
-        var month = dob.getMonth();
-        var year = dob.getYear();
-        var cent = year.substr(0,2);
-        var ury = year.substr(-3, 2);
-
-
-        d = (((cent/4)-2)*(cent-1) + (5*ury/4) + (26*(month+1)/10) + day)%7;
-        return d;
-      };
-
-      function findAkanName(){
-        var male = document.getElementById('maleRadio');
-        var female = document.getElementById('femaleRadio');
-        var dayOfWeek = days[d];
-        var akanName = document.getElementById('akanName');
-
-        if (male){
-          name = maleNames[d];
-          alert('Your Akan name is ');
-        }
-        else {
-          name = femaleNames[d];
-          alert('Your Akan name is ');
-        }
-        return name;
-        
-        akanName.innerhtml = "You were born on " + dayOfWeek + " and your Akan Name is" + name;
-      }
-
+      
     </script>
     
   </div>
