@@ -21,7 +21,7 @@ The project may have several undetected bugs. In case you come across any issues
 - Checkout to a new development branch (`git checkout -b improve-feature`)
 - Add changes as appropriate
 - Commit the changes to the development branch (`git commit -am 'feature changes'`)
-- push changes and create a pull request
+- Push changes and create a pull request
 
 ## Technologies Used
 This application incorporates the following technologies and tools:
